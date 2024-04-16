@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+    justify-content: start;
+}
+
+nav ul li a:link {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo{
+    width: 170px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #222;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+    margin: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
+
+/* photos gallary */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    grid-template-areas: 
+    "img1 img1 img1 img1 img1 img1"
+    "img2 img2 img3 img3 img4 img4"
+    ;
+}
+
+
+.gallery img:nth-child(1){
+    grid-area: img1;
+}
+
+.gallery img:nth-child(2){
+    grid-area: img2;
+}
+
+.gallery img:nth-child(3){
+    grid-area: img3;
+}
+
+.gallery img:nth-child(4){
+    grid-area: img4;
+}
+
+.gallery img{
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.027rem;
+    font-weight: 600;
+}
+
+/* Sweetheart's affair section */
+
+.list-item-title {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.margin {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+article {
+    padding-bottom: 25px;
+}
+
+
+/* behind the dough + what people are saying*/
+
+#services {
+background-color: #f8fafc;
+padding-bottom: 25px;
+}
+
+h2 {
+    padding-top: 45px;
+    text-align: center;
+    font-size: 1.802rem;
+    font-weight: 700;
+}
+
+#quotes {
+    background-color: #000;
+    color: #fff;
+}
+
+.quotes-grid {
+    text-align: left;
+    padding-bottom: 45px;
+    display: grid;
+    gap: 40px;
+}
+
+#sections {
+    background-color: #000;
+    color: #fff;
+}
+
+blockquote {
+    margin: 0;
+}
+
+/* try it with */
+
+
+.sales-grid article img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.sales-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.266rem;
+    font-weight: 700;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    font-size: large;
+    margin-top: auto;
+} 
+
+
+/* media query */
+
+@media (min-width: 768px) {
+    /* body {
+        background-color: beige;
+    } */
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 img1 img2 img2 img2"
+    "img3 img3 img3 img4 img4 img4"
+    ;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 25px
+}
+
+.quotes-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+}
+
+.sales-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+/* media query */
+
+@media (min-width: 960px) {
+    /* body {
+        background-color: rgb(96, 77, 64);
+    } */
+}
+
+
+.wrapper.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
