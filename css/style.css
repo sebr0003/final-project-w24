@@ -129,7 +129,7 @@ h2 {
     font-weight: 700;
 }
 
-#quotes {
+#sections {
     background-color: #000;
     color: #fff;
 }
@@ -225,7 +225,7 @@ footer{
 }
 
 
-.wrapper.gallery {
+.wrapper-gallery {
     display: flex;
     justify-content: space-between;
     gap: 2em;
